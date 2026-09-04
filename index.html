@@ -105,16 +105,15 @@
     }
 
     .logo-icon-wrap {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
       background: var(--surface);
       border: 1px solid var(--surface-border);
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     .logo-icon-wrap img {
@@ -608,7 +607,7 @@
       line-height: 1.5;
     }
 
-    /* Чеклист готовности (без VPN) */
+    /* Чеклист готовности (3 пункта) */
     .checklist-section {
       max-width: 960px;
       margin: 0 auto 5rem;
@@ -745,7 +744,7 @@
       line-height: 1.45;
     }
 
-    /* FAQ */
+    /* FAQ (только один блок про чаты) */
     .faq-section {
       max-width: 960px;
       margin: 0 auto 5rem;
@@ -972,7 +971,6 @@
   <div class="scroll-progress" id="scrollProgress"></div>
   <div class="grid-bg"></div>
 
-  <!-- Шапка с иконкой icon.png слева -->
   <header class="header">
     <nav class="nav-container">
       <a href="#" class="logo">
@@ -1010,7 +1008,6 @@
   </header>
 
   <main>
-    <!-- Главный экран (без иконки по центру) -->
     <section class="hero" id="hero">
       <div class="status-badge">
         <span class="status-dot"></span>
@@ -1030,7 +1027,6 @@
         </button>
       </div>
 
-      <!-- Сравнение версий -->
       <div class="compare-section" id="compare">
         <div class="compare-card">
           <div class="compare-header-row">
@@ -1042,7 +1038,7 @@
           <div class="compare-item-row">
             <span class="feature-name"><i class="fa-solid fa-ban"></i> Рекламные публикации в каналах</span>
             <span class="col-center"><span class="badge-no">Присутствуют</span></span>
-            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Полностью вырезаны</span></span>
+            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Вырезаны</span></span>
           </div>
 
           <div class="compare-item-row">
@@ -1054,13 +1050,12 @@
           <div class="compare-item-row">
             <span class="feature-name"><i class="fa-solid fa-shield-halved"></i> Сохранение удаленных сообщений</span>
             <span class="col-center"><span class="badge-no">Стираются</span></span>
-            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Сохраняются локально</span></span>
+            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Локально</span></span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Интерактивный симулятор твиков -->
     <section class="simulator-section" id="simulator">
       <div class="section-header">
         <h2 class="section-title">Интерактивный симулятор твиков</h2>
@@ -1100,7 +1095,6 @@
       </div>
     </section>
 
-    <!-- Основные возможности -->
     <section class="features-section" id="features">
       <div class="section-header">
         <h2 class="section-title">Ключевые возможности</h2>
@@ -1126,7 +1120,6 @@
       </div>
     </section>
 
-    <!-- Чеклист готовности к установке -->
     <section class="checklist-section">
       <div class="checklist-card">
         <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -1169,7 +1162,6 @@
       </div>
     </section>
 
-    <!-- Методы установки -->
     <section class="methods-section" id="methods">
       <div class="section-header">
         <h2 class="section-title">Способы установки</h2>
@@ -1203,7 +1195,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq-section" id="faq">
       <div class="section-header">
         <h2 class="section-title">Часто задаваемые вопросы</h2>
@@ -1220,21 +1211,10 @@
             Да, абсолютно. Все диалоги и медиафайлы хранятся на облачных серверах Telegram. После авторизации по номеру телефона вся история переписок автоматически отобразится в приложении.
           </div>
         </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Можно ли использовать клиент параллельно с официальным Telegram?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="faq-answer">
-            Да. Приложение имеет уникальный идентификатор пакета (Bundle ID), благодаря чему устанавливается как отдельная независимая программа, не затрагивая версию из App Store.
-          </div>
-        </div>
       </div>
     </section>
   </main>
 
-  <!-- Модальное окно загрузки -->
   <div class="modal-backdrop" id="dlModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
@@ -1251,12 +1231,10 @@
     </div>
   </div>
 
-  <!-- Кнопка наверх -->
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Прокрутить наверх">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <!-- Подвал -->
   <footer class="footer" id="contacts">
     <div class="footer-container">
       <div class="footer-brand">
