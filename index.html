@@ -105,15 +105,16 @@
     }
 
     .logo-icon-wrap {
-      width: 34px;
-      height: 34px;
-      border-radius: 9px;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
       background: var(--surface);
       border: 1px solid var(--surface-border);
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     .logo-icon-wrap img {
@@ -252,17 +253,16 @@
       color: var(--text-muted);
       font-size: 1.05rem;
       max-width: 600px;
-      margin: 0 auto 2.5rem;
+      margin: 0 auto 2.2rem;
     }
 
     .hero-actions {
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      gap: 0.75rem;
       margin-bottom: 3.5rem;
+      width: 100%;
     }
 
     .btn {
@@ -292,6 +292,29 @@
 
     .btn-primary:hover {
       background: #e2e8f0;
+      transform: translateY(-1px);
+    }
+
+    /* Компактная кнопка бета-теста (ниже основной) */
+    .btn-beta {
+      background: rgba(56, 189, 248, 0.08);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 0.55rem 1.1rem;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-beta:hover {
+      background: rgba(56, 189, 248, 0.16);
+      border-color: var(--accent);
       transform: translateY(-1px);
     }
 
@@ -577,7 +600,7 @@
     }
 
     .card:hover {
-      border-color: #2e344d;
+      border-color: #2f364f;
       transform: translateY(-2px);
     }
 
@@ -607,7 +630,7 @@
       line-height: 1.5;
     }
 
-    /* Чеклист готовности (3 пункта) */
+    /* Чеклист готовности */
     .checklist-section {
       max-width: 960px;
       margin: 0 auto 5rem;
@@ -744,7 +767,7 @@
       line-height: 1.45;
     }
 
-    /* FAQ (только один блок про чаты) */
+    /* FAQ */
     .faq-section {
       max-width: 960px;
       margin: 0 auto 5rem;
@@ -1025,6 +1048,9 @@
           <i class="fa-brands fa-apple"></i>
           Скачать Приложение
         </button>
+        <a href="https://t.me/+tkEb4nyhWqEwYTU6" target="_blank" rel="noopener noreferrer" class="btn-beta">
+          <i class="fa-solid fa-flask"></i> Получить бета-тест (200 Звезд в месяц)
+        </a>
       </div>
 
       <div class="compare-section" id="compare">
@@ -1038,7 +1064,7 @@
           <div class="compare-item-row">
             <span class="feature-name"><i class="fa-solid fa-ban"></i> Рекламные публикации в каналах</span>
             <span class="col-center"><span class="badge-no">Присутствуют</span></span>
-            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Вырезаны</span></span>
+            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Полностью вырезаны</span></span>
           </div>
 
           <div class="compare-item-row">
@@ -1050,7 +1076,7 @@
           <div class="compare-item-row">
             <span class="feature-name"><i class="fa-solid fa-shield-halved"></i> Сохранение удаленных сообщений</span>
             <span class="col-center"><span class="badge-no">Стираются</span></span>
-            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Локально</span></span>
+            <span class="col-center"><span class="badge-yes"><i class="fa-solid fa-check"></i> Сохраняются локально</span></span>
           </div>
         </div>
       </div>
@@ -1209,6 +1235,16 @@
           </div>
           <div class="faq-answer" style="max-height: 180px; padding-bottom: 1.1rem;">
             Да, абсолютно. Все диалоги и медиафайлы хранятся на облачных серверах Telegram. После авторизации по номеру телефона вся история переписок автоматически отобразится в приложении.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Можно ли использовать клиент параллельно с официальным Telegram?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Да. Приложение имеет уникальный идентификатор пакета (Bundle ID), благодаря чему устанавливается как отдельная независимая программа, не затрагивая версию из App Store.
           </div>
         </div>
       </div>
