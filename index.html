@@ -256,6 +256,13 @@
       margin: 0 auto 2.2rem;
     }
 
+    .hero-desc {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      max-width: 600px;
+      margin: 0 auto 2.2rem;
+    }
+
     .hero-actions {
       display: flex;
       flex-direction: column;
@@ -1014,7 +1021,6 @@
       </div>
 
       <div class="nav-right">
-        <button class="nav-btn open-dl-modal">Скачать Приложение</button>
         <button class="mobile-menu-toggle" id="menuToggle" aria-label="Меню">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -1043,15 +1049,9 @@
         Чистый и оптимизированный клиент для iPhone без встроенных рекламных постов, с поддержкой скрытого чтения сообщений и расширенными настройками интерфейса.
       </p>
 
-      <div class="hero-actions">
-        <button class="btn btn-primary open-dl-modal">
-          <i class="fa-brands fa-apple"></i>
-          Скачать Приложение
-        </button>
-        <a href="https://t.me/+tkEb4nyhWqEwYTU6" target="_blank" rel="noopener noreferrer" class="btn-beta">
-          <i class="fa-solid fa-flask"></i> Получить бета-тест (200 Звезд в месяц)
-        </a>
-      </div>
+      <p class="hero-desc">
+        Независимая модификация клиента Telegram для операционной системы iOS.
+      </p>
 
       <div class="compare-section" id="compare">
         <div class="compare-card">
@@ -1249,6 +1249,17 @@
         </div>
       </div>
     </section>
+
+    <section class="download-section" style="max-width: 960px; margin: 0 auto 3rem; padding: 0 1.25rem;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-align: center;">
+        <button class="btn btn-primary open-dl-modal" style="padding: 1rem 2rem; font-size: 1rem;">
+          <i class="fa-brands fa-apple"></i> Скачать Приложение
+        </button>
+        <a href="https://t.me/+tkEb4nyhWqEwYTU6" target="_blank" rel="noopener noreferrer" class="btn-beta" style="padding: 1rem 2rem; font-size: 1rem;">
+          <i class="fa-solid fa-flask"></i> Получить бета-тест (200 Звезд в месяц)
+        </a>
+      </div>
+    </section>
   </main>
 
   <div class="modal-backdrop" id="dlModal">
@@ -1280,7 +1291,6 @@
           </div>
           <span>PampGram</span>
         </div>
-        <p class="footer-desc">Независимая модификация клиента Telegram для операционной системы iOS.</p>
       </div>
 
       <div class="footer-links">
@@ -1296,7 +1306,8 @@
     <div class="footer-bottom">
       <p>&copy; 2026 PampGram. Проект не аффилирован с Telegram FZ-LLC.</p>
     </div>
-  </footer>
+
+    </footer>
 
   <script>
     const progressBar = document.getElementById('scrollProgress');
